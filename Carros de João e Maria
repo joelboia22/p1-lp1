@@ -1,0 +1,25 @@
+n = input('Deseja continuar: ')
+maior_ano = 0
+maior_velocidade = 0
+velocidade_media = 0
+qtd_carros = 0
+soma_carros = 0
+while (n is not "n") and (n is not "N"):
+    qtd_carros += 1
+    ano = int(input('Digite o ano do carro: '))
+    velocidade = float(input('Digite a velocidade: '))
+    soma_carros += velocidade
+    if maior_velocidade < velocidade:
+        maior_velocidade = velocidade
+    if maior_ano < ano:
+        maior_ano = ano
+    n = input('Deseja continuar: ')
+
+if qtd_carros == 0:
+    print("zero")
+else:
+    velocidade_media = soma_carros / qtd_carros
+
+    print("%.2f"%maior_velocidade)
+    print(maior_ano)
+    print("%.2f"%velocidade_media)
