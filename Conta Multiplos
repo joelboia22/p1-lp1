@@ -1,0 +1,17 @@
+a = int(input('digite um número: '))
+b = int(input('digite outro número: '))
+
+cont = 0
+lista1 = []
+lista2 = []
+
+for i in range(1, 50):
+    if (a * i) < 50:
+        lista1.append(a * i)
+    if (b * i) < 50:
+        lista2.append(b * i)
+
+for x in range(len(lista1)):
+    if lista1[x] in lista2:
+        cont = cont + 1
+print(cont)
