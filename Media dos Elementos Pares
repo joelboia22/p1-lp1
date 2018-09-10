@@ -1,0 +1,14 @@
+entrada = input('digite os números: ').split(' ')
+lista = []
+aux = 0
+cont = 0
+
+for i in entrada:
+    lista.append(int(i))
+for i in lista:
+    if (i % 2 == 0 and i > 0):
+        aux += i
+        cont += 1
+media = aux/cont
+
+print('%.2f'%media)
