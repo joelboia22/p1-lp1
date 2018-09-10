@@ -1,0 +1,18 @@
+lista2 = []
+lista1 = []
+iguais = []
+i = 0
+c = 0
+
+while i < 5:
+    a = int(input('Digite um valor: '))
+    i = i + 1
+    lista1.append(a)
+while c < 3:
+    b = int(input('Digite outro valor: '))
+    c = c + 1
+    lista2.append(b)
+for i in lista1:
+    if i in lista2:
+        iguais.append(i)
+print(iguais)
