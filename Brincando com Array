@@ -1,0 +1,18 @@
+a = input('digite os números: ').split(' ')
+
+for i in range(len(a)-1, -1, -1):
+    print(a[i],end=' ')
+
+print()
+
+deslocamento = 1 #int(input('digite o deslocamento: '))
+tamanho = len(a)
+contador = 0
+
+while (contador < tamanho):
+    indice = (deslocamento + contador) % tamanho
+    print(a[indice], end=' ')
+    contador = contador + 1
+print()
+a.reverse()
+print(a)
